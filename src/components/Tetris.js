@@ -47,8 +47,8 @@ const Tetris = () => {
   }
 
   const drop = () => {
-    // Increase level when player has cleared 10 rows
-    if (rows > (level + 1) *10) {
+    // Increase level when player has cleared 3 rows
+    if (rows > (level + 1) *5) {
       setLevel(prev => prev +1);
       // Increase Speed
       setDropTime(1000 / (level + 1) + 200)
@@ -103,7 +103,12 @@ const Tetris = () => {
         <Stage stage={stage} />
         <aside>
           {gameOver ? (
-            <Display gameOver={gameOver} text="Game Over" />
+            <div>
+              <Display gameOver={gameOver} text="Game Over" />
+              <Display text={`Score: ${score}`} />
+              <Display text={`Rows: ${rows}`} />
+              <Display text={`Level: ${level}`} />
+            </div>
           ) : (
             <div>
               <Display text={`Score: ${score}`} />
