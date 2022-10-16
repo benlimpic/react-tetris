@@ -4,8 +4,8 @@ import ColorSelect from './components/ColorSelect'
 
 const App = () => (
   <div className="App">
-    {/* <Tetris /> */}
-    <ColorSelect />
+    <Tetris />
+    {/* <ColorSelect /> */}
   </div>
 )
 

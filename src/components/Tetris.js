@@ -48,7 +48,7 @@ const Tetris = () => {
 
   const drop = () => {
     // Increase level when player has cleared 3 rows
-    if (rows > (level + 1) *5) {
+    if (rows > (level + 1) *2) {
       setLevel(prev => prev +1);
       // Increase Speed
       setDropTime(1000 / (level + 1) + 200)
