@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
+
+
 export const StyledTetrisWrapper = styled.div`
     width: 100vw;
     height: 100vh;
-    background: #F94144;
+    {/* background-color: rgba(249, 65, 68, 1); */}
     background-size: cover;
     overflow: hidden;
   `;
