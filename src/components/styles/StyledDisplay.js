@@ -6,7 +6,7 @@ display: flex;
 align-items: center;
 margin: 0 0 4px 0;
 padding: 5px;
-border: 2px solid #333;
+border: 2px solid rgba(250, 250, 250, .5);
 min-height: 30px;
 width: 100%;
 border-radius: 20px;

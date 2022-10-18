@@ -5,8 +5,9 @@ import styled from 'styled-components';
 export const StyledTetrisWrapper = styled.div`
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(340deg, #e95110, #1110e9, #e8e910, #10e957);
-    animation: AnimationName 90s ease infinite;
+    background: linear-gradient(165deg, #3f338f, #de4117, #de9017, #a417de, #a21266, #143389, #293659, #963b0b);
+    background-size: 1600% 1600%;
+    animation: AnimationName 60s ease infinite;
     @keyframes AnimationName {
       0%{background-position:0% 24%}
       50%{background-position:100% 77%}

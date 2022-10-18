@@ -11,5 +11,6 @@ export const StyledStage = styled.div`
   grid-gap: 2px;
   width: 100%;
   max-width: 25vw;
-  background: rgba(250, 250, 250, );
+  background: rgba(250, 250, 250, .2 );
+  border: 2px solid rgba(250, 250, 250, .3);
 `;
