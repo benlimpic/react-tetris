@@ -4,6 +4,7 @@ import { createStage, checkCollision } from '../gameHelpers';
 
 // Styled Components
 import { StyledTetrisWrapper, StyledTetris } from './styles/StyledTetris';
+import { StyledTitle } from './styles/StyledTitle';
 
 // Custom Hooks
 import { useInterval } from '../hooks/useInterval'
@@ -12,6 +13,7 @@ import { useStage } from '../hooks/useStage';
 import { useGameStatus } from '../hooks/useGameStatus'
 
 // Components
+import Title from './Title';
 import Stage from './Stage';
 import Display from './Display';
 import StartButton from './StartButton';
@@ -99,9 +101,13 @@ const Tetris = () => {
 
   return (
     <StyledTetrisWrapper role="button" tabIndex="0" onKeyDown={e => move(e)} onKeyUp={keyUp}>
+
       <StyledTetris>
         <Stage stage={stage} />
         <aside>
+          <StyledTitle>
+            Sunsetris
+          </StyledTitle>
           {gameOver ? (
             <div>
               <Display gameOver={gameOver} text="Game Over" />
